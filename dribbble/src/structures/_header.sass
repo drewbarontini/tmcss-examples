@@ -1,0 +1,38 @@
+// *************************************
+//
+//   Header
+//   -> Top lead-in
+//
+// *************************************
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %header.header
+//   .header-item
+//
+// *************************************
+
+.header
+  height: $header-height
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.header-item
+  @extend .group
+  line-height: $header-height
+
+// ----- List ----- //
+
+// Item Link
+
+.header-list-item-link
+  color: $c-subdue
+  &:hover,
+  &:focus
+    color: $c-invert
+

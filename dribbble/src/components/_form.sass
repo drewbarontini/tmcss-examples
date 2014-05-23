@@ -1,0 +1,28 @@
+// *************************************
+//
+//   Form
+//   -> User inputs
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %form.form
+//   %input.form-input{ type: 'text' }
+//
+// *************************************
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.form-input
+  @extend .boxSizing
+  background: $c-invert
+  border-radius: $b-borderRadius
+  border: 0
+  color: $c-subdue
+  font-family: $f-base
+  font-size: $b-fontSize
+  padding: $b-whitespace-xs
+  width: 100%

@@ -1,0 +1,81 @@
+// *************************************
+//
+//   List
+//   -> Enumeration of items
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .list[.list--inline|object]
+//   %li.list-item
+//     %a.list-item-link{ href: '#' } Item
+//   %li.list-item
+//     %a.list-item-link{ href: '#' } Item
+//
+// *************************************
+
+.list
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Inline ----- //
+
+.list--inline
+
+  .list-item
+    display: inline
+    margin: 0
+    margin-right: $b-whitespace
+    &:last-child
+      margin-right: 0
+
+// Condensed
+
+.list--inline--condensed
+
+  .list-item
+    margin-right: $b-whitespace-s
+
+// ----- Object ----- //
+
+.list--object
+  @extend .group
+
+  .list-item,
+  .list-item-link
+    display: block
+
+  .list-item
+    float: left
+    margin: 0
+    margin-right: $b-whitespace
+    &:last-child
+      margin-right: 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+// Active
+
+.list-item.is-active
+
+  .list-item-link
+    color: $c-base
+
+// Link
+
+.list-item-link
+  color: $c-subdue
+  &:hover,
+  &:focus
+    color: darken($c-subdue, 10%)
+
