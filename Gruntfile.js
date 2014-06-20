@@ -7,7 +7,8 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'dribbble/application.css': 'dribbble/src/application.sass' // 'destination': 'source'
+          'dribbble/application.css': 'dribbble/src/application.sass', // 'destination': 'source'
+          'digg/application.css': 'digg/src/application.sass' // 'destination': 'source'
         }
       }
     },
