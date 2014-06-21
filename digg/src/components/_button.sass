@@ -1,0 +1,29 @@
+// *************************************
+//
+//   Button
+//   -> Clickable item
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %a.btn{href: '#' } Button
+//
+// *************************************
+
+.btn
+  background: $c-background
+  border: 0
+  border-radius: $b-borderRadius
+  color: $c-base
+  display: inline-block
+  font-size: 90%
+  font-weight: bold
+  line-height: 2.5
+  padding: 0 $b-whitespace
+  text-align: center
+  white-space: nowrap
+  &:hover,
+  &:focus
+    color: $c-subdue
+

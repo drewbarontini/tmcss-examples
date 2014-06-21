@@ -1,34 +1,27 @@
 // *************************************
 //
-//   Row
-//   -> Width-spanning blocks
+//   Form
+//   -> Input sheet
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .row[.row--a|b]
-//   / ...
+// %form.form
+//   %input.form-input(type="text")
 //
 // *************************************
 
-.row
-  overflow: hidden
-  padding: 0 $b-whitespace
-
 // -------------------------------------
-//   Modifiers
+//   Scaffolding
 // -------------------------------------
 
-// ----- Hierarchy ----- //
+// ----- Input ----- //
 
-.row--a
+.form-input
   background: $c-invert
-  box-shadow: $b-boxShadow
-
-.row--b
-  background: $c-base
-
-.row--c
-  background: lighten($c-subdue, 15%)
+  border: 0
+  border-radius: $b-borderRadius
+  color: darken($c-subdue, 15%)
+  padding: $b-whitespace-s
 

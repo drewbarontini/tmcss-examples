@@ -497,6 +497,23 @@ a:hover, a:focus {
   display: block;
 }
 
+.btn {
+  background: white;
+  border: 0;
+  border-radius: 3px;
+  color: black;
+  display: inline-block;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 2.5;
+  padding: 0 1.25em;
+  text-align: center;
+  white-space: nowrap;
+}
+.btn:hover, .btn:focus {
+  color: #aaaaaa;
+}
+
 .cell {
   margin-left: auto;
   margin-right: auto;
@@ -506,6 +523,14 @@ a:hover, a:focus {
 
 .cell--s {
   max-width: 62.5em;
+}
+
+.form-input {
+  background: white;
+  border: 0;
+  border-radius: 3px;
+  color: #848484;
+  padding: 0.625em;
 }
 
 .grid {
@@ -979,7 +1004,7 @@ a:hover, a:focus {
 }
 
 .row--c {
-  background: #aaaaaa;
+  background: #d0d0d0;
 }
 
 .well {
@@ -1085,6 +1110,10 @@ a:hover, a:focus {
 
 .bdrr {
   border-right: 1px solid #eeeeee;
+}
+
+.bdrt {
+  border-top: 1px solid #eeeeee;
 }
 
 .db {
