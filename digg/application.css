@@ -960,24 +960,8 @@ a:hover, a:focus {
   margin-right: 0;
 }
 
-.list--object--single .list-item {
-  margin-bottom: 0;
-}
-
 .list--s .list-item, .story-list .list-item {
   margin-right: 0.625em;
-}
-
-.list--styled {
-  padding-left: 1.25em;
-}
-.list--styled .list-item {
-  display: list-item;
-  list-style-type: disc;
-}
-
-.list--styled--numbered .list-item {
-  list-style-type: decimal;
 }
 
 .list-item {
