@@ -392,7 +392,7 @@ th {
   padding: 0;
 }
 
-.group::after, .bucket::after, .grid::after {
+.group::after, .bucket::after, .grid::after, .list--object::after {
   clear: both;
   content: "";
   display: table;
@@ -421,8 +421,8 @@ th {
 }
 
 html {
-  background: #ecf0f1;
-  color: #444444;
+  background: white;
+  color: black;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -458,25 +458,23 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 150%;
+  font-size: 130%;
 }
 
 h3, .h3 {
-  font-size: 125%;
+  font-size: 105%;
 }
 
 h4, .h4 {
-  font-size: 110%;
+  font-size: 100%;
 }
 
 a {
-  border-bottom: 2px solid #9a9aa8;
-  color: #4e4e5b;
+  color: #028cd2;
   text-decoration: none;
 }
 a:hover, a:focus {
-  border-bottom-color: #4e4e5b;
-  color: #b5b5c0;
+  color: #aaaaaa;
 }
 
 .bucket--flag {
@@ -502,7 +500,7 @@ a:hover, a:focus {
 .card {
   background: white;
   border-radius: 3px;
-  box-shadow: 0 2px 0 rgba(68, 68, 68, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   padding: 1.25em;
   position: relative;
 }
@@ -510,12 +508,12 @@ a:hover, a:focus {
 .cell {
   margin-left: auto;
   margin-right: auto;
-  max-width: 62.5em;
+  max-width: 75em;
   position: relative;
 }
 
 .cell--s {
-  max-width: 43.75em;
+  max-width: 62.5em;
 }
 
 .grid {
@@ -927,17 +925,85 @@ a:hover, a:focus {
     width: 91.666%;
   }
 }
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--block > .list-item {
+  display: block;
+  margin-bottom: 1.25em;
+}
+.list--block > .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list--block--l .list-item {
+  margin-bottom: 2.5em;
+}
+
+.list--bordered > .list-item {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1.25em;
+}
+.list--bordered > .list-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.list--object .list-item {
+  float: left;
+  margin-right: 1.25em;
+}
+.list--object .list-item:last-child {
+  margin-right: 0;
+}
+
+.list--object--single .list-item {
+  margin-bottom: 0;
+}
+
+.list--s .list-item, .story-list .list-item {
+  margin-right: 0.625em;
+}
+
+.list--styled {
+  padding-left: 1.25em;
+}
+.list--styled .list-item {
+  display: list-item;
+  list-style-type: disc;
+}
+
+.list--styled--numbered .list-item {
+  list-style-type: decimal;
+}
+
+.list-item {
+  display: inline;
+  margin-right: 1.25em;
+}
+.list-item:last-child {
+  margin-right: 0;
+}
+
 .row {
   overflow: hidden;
   padding: 0 1.25em;
 }
 
 .row--a {
-  background: #4e4e5b;
+  background: white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .row--b {
-  background: #444444;
+  background: black;
+}
+
+.row--c {
+  background: #aaaaaa;
 }
 
 .well {
@@ -950,12 +1016,87 @@ a:hover, a:focus {
   margin-top: 2.5em;
 }
 
+.collection--1of3 .collection-item:nth-child(4n) {
+  clear: left;
+}
+
+.collection-item {
+  margin-bottom: 2.5em;
+}
+
+.header {
+  line-height: 55px;
+  height: 55px;
+}
+
+.nav--a .nav-item {
+  text-transform: uppercase;
+}
+
+.nav--b .nav-item {
+  font-size: 75%;
+  position: relative;
+}
+.nav--b .nav-item:last-child::after {
+  display: none;
+}
+.nav--b .nav-item::after {
+  background: #aaaaaa;
+  border-radius: 50%;
+  content: "";
+  height: 2px;
+  right: -1em;
+  position: absolute;
+  top: 0.5em;
+  width: 2px;
+}
+
+.nav-item.is-active .nav-item-link {
+  color: black;
+}
+
+.nav-item-link {
+  color: #aaaaaa;
+}
+.nav-item-link:hover, .nav-item-link:focus {
+  color: black;
+}
+
+.story-list,
+.story-tag {
+  color: #909090;
+  font-size: 60%;
+}
+
+.story-list,
+.story-media {
+  margin-bottom: 0.625em;
+}
+
+.story-desc {
+  font-size: 75%;
+}
+
+.story-media {
+  display: block;
+}
+
+.story-tag {
+  font-weight: bold;
+  margin-bottom: 0.3125em;
+  text-transform: uppercase;
+}
+
+.story-title-link {
+  color: black;
+}
+
 .bcb {
-  background: #444444;
+  background: black;
 }
 
 .bch {
-  background: #4e4e5b;
+  background: #028cd2;
 }
 
 .bci {
@@ -963,7 +1104,11 @@ a:hover, a:focus {
 }
 
 .bcs {
-  background: #b5b5c0;
+  background: #aaaaaa;
+}
+
+.bdrr {
+  border-right: 1px solid #eeeeee;
 }
 
 .db {
@@ -1244,11 +1389,11 @@ a:hover, a:focus {
 }
 
 .tcb {
-  color: #444444;
+  color: black;
 }
 
 .tch {
-  color: #4e4e5b;
+  color: #028cd2;
 }
 
 .tci {
@@ -1256,7 +1401,7 @@ a:hover, a:focus {
 }
 
 .tcs {
-  color: #b5b5c0;
+  color: #aaaaaa;
 }
 
 .tfb {

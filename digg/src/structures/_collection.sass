@@ -1,0 +1,32 @@
+// *************************************
+//
+//   Collection
+//   -> Specific arrangement of grid items
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .collection
+//   .collection-item
+//
+// *************************************
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.collection--1of3
+
+  .collection-item:nth-child(4n)
+    clear: left
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.collection-item
+  margin-bottom: $b-whitespace-l
+

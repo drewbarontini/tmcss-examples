@@ -1,0 +1,109 @@
+
+// *************************************
+//
+//   List
+//   -> Enumeration of items
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %ul.list[.list--inline|object|object--single|styled|styled--numbered]
+//   %li.list-item List Item
+//   %li.list-item List Item
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.list
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Block ----- //
+
+.list--block
+
+  > .list-item
+    display: block
+    margin-bottom: $b-whitespace
+    &:last-child
+      margin-bottom: 0
+
+// Sizes
+
+.list--block--l
+
+  .list-item
+    margin-bottom: $b-whitespace-l
+
+// ----- Bordered ----- //
+
+.list--bordered
+
+  > .list-item
+    border-bottom: $b-border
+    padding-bottom: $b-whitespace
+    &:last-child
+      border-bottom: 0
+      padding-bottom: 0
+
+// ----- Object ----- //
+
+.list--object
+  @extend .group
+
+  .list-item
+    float: left
+    margin-right: $b-whitespace
+    &:last-child
+      margin-right: 0
+
+// Single
+
+.list--object--single
+
+  .list-item
+    margin-bottom: 0
+
+// ----- Sizes ----- //
+
+.list--s
+
+  .list-item
+    margin-right: $b-whitespace-s
+
+// ----- Styled ----- //
+
+.list--styled
+  padding-left: $b-whitespace
+
+  .list-item
+    display: list-item
+    list-style-type: disc
+
+// Numbered
+
+.list--styled--numbered
+
+  .list-item
+    list-style-type: decimal
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.list-item
+  display: inline
+  margin-right: $b-whitespace
+  &:last-child
+    margin-right: 0

@@ -1,0 +1,67 @@
+// *************************************
+//
+//   Story
+//   -> Digg story block
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %article.story
+//   %img.story-media{ src: '', alt: '' }
+//   %p.story-tag Story Tag Title
+//   %h2.story-title
+//     %a.story-title-link{ href: '#' } Story Title
+//   %ul.list.story-list
+//     %li.list-item Item
+//     %li.list-item Item
+//  %p.story-desc This is the story description.
+//
+// *************************************
+
+.story
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Shared ----- //
+
+.story-list,
+.story-tag
+  color: darken($c-subdue, 10%)
+  font-size: $b-fontSize-xs
+
+.story-list,
+.story-media
+  margin-bottom: $b-whitespace-s
+
+// ----- Description ----- //
+
+.story-desc
+  font-size: $b-fontSize-s
+
+// ----- List ----- //
+
+.story-list
+  @extend .list--s
+
+// ----- Media ----- //
+
+.story-media
+  display: block
+
+// ----- Tag ----- //
+
+.story-tag
+  font-weight: bold
+  margin-bottom: $b-whitespace-xs
+  text-transform: uppercase
+
+// ----- Title ----- //
+
+// Link
+
+.story-title-link
+  color: $c-base
+

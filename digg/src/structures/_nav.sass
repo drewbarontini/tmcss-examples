@@ -1,0 +1,67 @@
+// *************************************
+//
+//   Nav
+//   -> Site navigational blocks
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .list.nav[.nav--a]
+//   %a.list-item.nav-item{ href: '#' }
+//
+// *************************************
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Primary ----- //
+
+.nav--a
+
+  .nav-item
+    text-transform: uppercase
+
+// ----- Secondary ----- //
+
+.nav--b
+
+  .nav-item
+    font-size: $b-fontSize-s
+    position: relative
+    &:last-child
+      &::after
+        display: none
+    &::after
+      $size: 2px
+      background: $c-subdue
+      border-radius: 50%
+      content: ''
+      height: $size
+      right: -1em
+      position: absolute
+      top: 0.5em
+      width: $size
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+// Active
+
+.nav-item.is-active
+
+  .nav-item-link
+    color: $c-base
+
+// Link
+
+.nav-item-link
+  color: $c-subdue
+  &:hover,
+  &:focus
+    color: $c-base
+
