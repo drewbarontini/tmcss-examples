@@ -1017,7 +1017,7 @@ a:hover, a:focus {
   margin-top: 2.5em;
 }
 
-.collection--1of3 .collection-item:nth-child(4n) {
+.collection--1of3 .collection-item:nth-child(3n + 1) {
   clear: left;
 }
 
