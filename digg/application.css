@@ -1000,11 +1000,11 @@ a:hover, a:focus {
 }
 
 .row--b {
-  background: black;
+  background: #d0d0d0;
 }
 
-.row--c {
-  background: #d0d0d0;
+.row--highlight {
+  background: black;
 }
 
 .well {
