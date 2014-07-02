@@ -1,6 +1,11 @@
 "Thinking Modular CSS" Example Sites
 ====================================
 
+Confusion?
+----------
+
+Check out the [MVCSS documentation](http://mvcss.github.io/) if anything feels strange. Everything is explained there :)
+
 Setup
 -----
 
