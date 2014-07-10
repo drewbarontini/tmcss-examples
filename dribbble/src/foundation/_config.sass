@@ -6,17 +6,36 @@
 // *************************************
 
 // -------------------------------------
-//   Variables
+//   Colors
 // -------------------------------------
 
 // ----- Base ----- //
 
-$b-borderColor: #ddd
+$c-background: #f2f2f2
+$c-background-invert: #fff
+$c-border: #ddd
+$c-highlight: #4083ab
+$c-text-invert: #fff
+$c-subdue: #999
+$c-text-dark: #323232
+$c-text: #777
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle $b-borderColor
+$b-border: $b-borderWidth $b-borderStyle $c-border
 $b-borderRadius: 3px
 $b-boxShadow: 0 1px 2px rgba(#000, 0.07)
+
+// ----- Typography ----- //
+
+$b-fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$b-fontFamily-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif
 $b-fontSize: 13px
 $b-fontSize-xs: 60%
 $b-fontSize-s: 75%
@@ -24,31 +43,28 @@ $b-fontSize-m: 90%
 $b-fontSize-l: 115%
 $b-fontSize-xl: 150%
 $b-lineHeight: 1.5
-$b-maxWidth: 74.615384615em // ~970px
-$b-maxWidth-s: 43.75em // ~700px
-$b-whitespace: 1.538461538em // ~20px
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
 
-// ----- Colors ----- //
+// ----- Sizing ----- //
 
-$c-background: #f2f2f2
-$c-base: #323232
-$c-highlight: #4083ab
-$c-invert: #fff
-$c-subdue: #999
-$c-text: #777
+$b-maxWidth: em(970px)
+$b-maxWidth-s: em(700px)
+$b-space: em(20px)
+$b-space-xs: 0.25 * $b-space
+$b-space-s: 0.5 * $b-space
+$b-space-l: 2 * $b-space
+$b-space-xl: 4 * $b-space
 
-// ----- Fonts ----- //
-
-$f-base: 'Helvetica Neue', Helvetica, Arial, sans-serif
-$f-header: 'Helvetica Neue', Helvetica, Arial, sans-serif
+// -------------------------------------
+//   Components
+// -------------------------------------
 
 // ----- Grid ----- //
 
-$grid-gutter: 30px
+$g-gutter: 30px
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
 
 // ----- Header ----- //
 
