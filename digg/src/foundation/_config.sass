@@ -6,25 +6,35 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
-
-// -------------------------------------
-//   Variables
+//   Colors
 // -------------------------------------
 
 // ----- Base ----- //
 
-$b-borderColor: #eee
+$c-background-invert: #fff
+$c-background: #fff
+$c-border: #eee
+$c-highlight: #028cd2
+$c-subdue: #aaa
+$c-text-invert: #fff
+$c-text: #000
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle $b-borderColor
+$b-border: $b-borderWidth $b-borderStyle $c-border
 $b-borderRadius: 3px
 $b-boxShadow: 0 1px 0 rgba(#000, 0.15)
+
+// ----- Typography ----- //
+
+$b-fontFamily: sans-serif
+$b-fontFamily-heading: sans-serif
 $b-fontSize: 16px
 $b-fontSize-xs: 60%
 $b-fontSize-s: 75%
@@ -32,37 +42,33 @@ $b-fontSize-m: 90%
 $b-fontSize-l: 115%
 $b-fontSize-xl: 150%
 $b-lineHeight: 1.5
-$b-maxWidth: 62.5em // ~900px
-$b-maxWidth-l: 75em // ~1200px
-$b-whitespace: 1.25em // ~20px
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
 
-// ----- Colors ----- //
+// ----- Sizing ----- //
 
-$c-background: #fff
-$c-base: #000
-$c-highlight: #028cd2
-$c-invert: #fff
-$c-subdue: #aaa
+$b-maxWidth: em(900px)
+$b-maxWidth-l: em(1200px)
+$b-space: em(20px)
+$b-space-xs: 0.25 * $b-space
+$b-space-s: 0.5 * $b-space
+$b-space-l: 2 * $b-space
+$b-space-xl: 4 * $b-space
 
-// ----- Fonts ----- //
-
-$f-base: sans-serif
-$f-header: sans-serif
-
-// ----- Breakpoints ----- //
-
-$breakpoint-s: 30em // ~480px
-$breakpoint-m: 50em // ~800px
-$breakpoint-l: 64em // ~1024px
+// -------------------------------------
+//   Components
+// -------------------------------------
 
 // ----- Grid ----- //
 
-$grid-defaults: 's' $breakpoint-s, 'm' $breakpoint-m, 'l' $breakpoint-l
-$grid-gutter: 20px
+$g-s: em(480px)
+$g-m: em(800px)
+$g-l: em(1024px)
+
+$g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
+$g-gutter: 20px
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
 
 // ----- Header ----- //
 
